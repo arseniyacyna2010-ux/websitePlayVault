@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY','django-insecure-34c0qy=y$%m(c-anisg^0*(8%9f02$4bz4uy)0^mola#fx9-ah')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', 'False') == 'True'
+DEBUG = False
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost 127.0.0.1 your-app-name.onrender.com').split(' ')
 
@@ -113,7 +113,8 @@ USE_I18N = True
 
 USE_TZ = True
 
-
+DJANGO_SETTINGS_MODULE = website.settings
+ALLOWED_HOSTS = websiteplayvault.onrender.com
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 

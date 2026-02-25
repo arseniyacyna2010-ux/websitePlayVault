@@ -26,22 +26,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/website/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="52" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.0" vertical-offset="1587" max-vertical-offset="2448">
+            <state line="116" column="45" selection-start="3219" selection-end="3219" vertical-scroll-proportion="0.36469072" vertical-offset="1689" max-vertical-offset="2465">
               <folding>
                 <element signature="e#307#316#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/website/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="18" selection-start="833" selection-end="833" vertical-scroll-proportion="0.80283505" vertical-offset="142" max-vertical-offset="918">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -103,7 +94,6 @@
     <setting file="file://$PROJECT_DIR$/website/games/models.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/website/games/templates/games/game_detail.html" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/website/games/templates/games/game_list.html" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/website/manage.py" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/website/news/admin.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/website/main/templates/main/layout.html" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/website/games/views.py" root0="SKIP_INSPECTION" />
@@ -144,16 +134,16 @@
         <option value="$PROJECT_DIR$/website/games/templates/games/games_home.html" />
         <option value="$PROJECT_DIR$/website/website/wsgi.py" />
         <option value="$PROJECT_DIR$/website/website/urls.py" />
-        <option value="$PROJECT_DIR$/website/website/settings.py" />
         <option value="$PROJECT_DIR$/website/Procfile" />
         <option value="$PROJECT_DIR$/website/website/Procfile" />
         <option value="$PROJECT_DIR$/website/requirements.txt" />
+        <option value="$PROJECT_DIR$/website/website/settings.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="612" />
-    <option name="y" value="394" />
+    <option name="x" value="1163" />
+    <option name="y" value="390" />
     <option name="width" value="1249" />
     <option name="height" value="932" />
   </component>
@@ -450,7 +440,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="612" y="394" width="1249" height="932" extended-state="1" />
+    <frame x="1163" y="390" width="1249" height="932" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -662,13 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="663" selection-end="663" vertical-scroll-proportion="0.46005154" vertical-offset="0" max-vertical-offset="776">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/games/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="742">
@@ -737,15 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/website/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="52" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.0" vertical-offset="1587" max-vertical-offset="2448">
-          <folding>
-            <element signature="e#307#316#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/website/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="49" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="776">
@@ -753,10 +727,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/website/website/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="18" selection-start="833" selection-end="833" vertical-scroll-proportion="0.80283505" vertical-offset="142" max-vertical-offset="918">
-          <folding />
+        <state line="116" column="45" selection-start="3219" selection-end="3219" vertical-scroll-proportion="0.36469072" vertical-offset="1689" max-vertical-offset="2465">
+          <folding>
+            <element signature="e#307#316#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
