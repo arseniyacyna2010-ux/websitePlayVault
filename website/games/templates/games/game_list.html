@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Игры и Приложения</title>
+    <style>
+        body {
+            color: #ffffff;
+            background-color: black;
+            font-family: sans-serif;
+        }
+        .game-item {
+            display: flex;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+            background-color: #1a1a1a;
+        }
+        .game-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-right: 20px;
+        }
+        .game-item h2 {
+            margin-top: 0;
+            color: #ffffff;
+        }
+        .game-item p {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <a href="{% url 'home' %}">Главная</a>
+    <h1>Наши Игры и Приложения</h1>
+    {% if games %}
+        {% for game in games %}
+            <div class="game-item">
+                {% if game.image2 %}
+                    <img src="{{ MEDIA_URL }}{{ game.image2 }}" alt="{{ game.name2 }}">
+                {% else %}
+                    <div style="width: 100px; height: 100px; background-color: #eee; margin-right: 20px;"></div>
+                {% endif %}
+                <div>
+                    <h2><a href="{% url 'game_detail' pk=game.pk %}">{{ game.name2 }}</a></h2>
+                    <p>{{ game.description|truncatewords:30 }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>Пока игр или приложений нет.</p>
+    {% endif %}
+</body>
+</html>

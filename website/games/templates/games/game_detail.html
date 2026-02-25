@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>{{ game.name }}</title>
+    <style>
+        body {
+            color: #ffffff;
+            background-color: black;
+            font-family: sans-serif;
+        }
+        .game-detail {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #1a1a1a;
+        }
+        .game-detail img {
+            max-width: 300px;
+            float: left;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #00cc00;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+        .download-button:hover {
+            background-color: #00dd00;
+        }
+        .external-link-button {
+            background-color: #0099cc;
+            color: black;
+        }
+        .external-link-button:hover {
+            background-color: #00aaff;
+        }
+        h1 {
+            margin-top: 0;
+            color: #ffffff;
+        }
+        p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+        a {
+            color: #66ccff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <a href="{% url 'game_list' %}">Назад к списку</a>
+    <div class="game-detail">
+        <h1>{{ game.name2 }}</h1>
+        {% if game.image2 %}
+            <img src="{{ MEDIA_URL }}{{ game.image2 }}" alt="{{ game.name2 }}">
+        {% endif %}
+        <p>{{ game.description }}</p>
+        {% if game.download_link %}
+            <a href="{{ MEDIA_URL }}{{ game.download_link }}" class="download-button" download>Скачать {{ game.name2 }}</a>
+        {% elif game.download_url %}
+            <a href="{{ game.download_url }}" class="download-button external-link-button" target="_blank" rel="noopener noreferrer">
+                Перейти к скачиванию (внешняя ссылка)
+            </a>
+        {% else %}
+            <p>Скачивание недоступно.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

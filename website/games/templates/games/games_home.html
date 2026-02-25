@@ -1,0 +1,25 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Игры и приложения{% endblock %}
+
+{% block content %}
+        <div class="features">
+            <h1>Игры и приложения</h1>
+            {% if games %}
+                {% for el in games %}
+                    <div class="alert alert-warning">
+                        {% load static %}
+                        <img src="{{ el.image}}" alt="Описание изображения">
+                        <h3>{{ el.title2 }}</h3>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>Нет записей!</p>
+            {% endif %}
+
+            {# Комментарий #}
+        </div>
+{% endblock %}
+
+#филтр lower меняет на обычный шрифт
+#а фильтр upper меняет на жырные буквы
